@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/../DaisyExamples/libDaisy/src/**",
+                "${workspaceFolder}/../DaisyExamples/DaisySP/Source/**",
+                "${workspaceFolder}/../DaisyExamples/libDaisy/Drivers/CMSIS/Include",
+                "${workspaceFolder}/../DaisyExamples/libDaisy/Drivers/CMSIS/Device/ST/STM32H7xx/Include",
+                "${workspaceFolder}/../DaisyExamples/libDaisy/Drivers/STM32H7xx_HAL_Driver/Inc"
+            ],
+            "defines": [
+                "STM32H750xx",
+                "USE_HAL_DRIVER"
+            ],
+            "macFrameworkPath": [],
+            "compilerPath": "/usr/local/bin/arm-none-eabi-gcc",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-arm"
+        }
+    ],
+    "version": 4
+}

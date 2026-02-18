@@ -1,0 +1,41 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "build",
+            "command": "make",
+            "args": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "build_and_program_dfu",
+            "command": "make clean; make; make program-dfu",
+            "group": "build",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "type": "shell",
+            "label": "program-dfu",
+            "command": "make program-dfu",
+            "problemMatcher": []
+        },
+        {
+            "type": "shell",
+            "label": "build_all_debug",
+            "command": "make clean; DEBUG=1 make",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cortex Debug",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/build/ethereal.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "interface": "swd",
+            "device": "STM32H750IB",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32h7x.cfg"
+            ],
+            "svdFile": "${workspaceFolder}/../DaisyExamples/libDaisy/core/STM32H750x.svd",
+            "runToMain": true,
+            "preLaunchTask": "build_all_debug",
+            "showDevDebugOutput": true
+        }
+    ]
+}

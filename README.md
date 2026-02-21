@@ -28,3 +28,14 @@ Connect your 3.5mm or 1/4" jacks as follows:
 1.  **AC Coupling**: The Daisy Seed inputs/outputs are AC coupled on the board, so you can connect line-level signals directly.
 2.  **Grounding**: Always connect the "Sleeve" or "Ground" of your audio jacks to **AGND** (Pin 20) for the cleanest audio. Do not use the Digital Ground (DGND) pins if you can avoid it.
 3.  **Levels**: The inputs expect continuous line-level signals (approx 1V-1.5V RMS). If you are connecting a raw guitar pickup, it will be very quiet (you may need a preamp circuit). If connecting Eurorack/Modular (10Vpp), you need a voltage divider to attenuate it or you will clip/damage the input.
+
+---
+
+### Harmony Generation Interval
+
+When the pedal detects a solid pitch and opens the noise gate, it simultaneously synthesizes a secondary harmony note to accompany the fundamental guitar tone. This harmony is not fixed; it intelligently adapts based on the user-selected musical **Scale**. 
+
+The generated interval is derived directly from the fundamental note's detected pitch before being mathematically forced (quantized) into the nearest legal scale degree.
+
+*   **Major & Minor Scales (Diatonic)**: The pedal defaults to adding a **Major 3rd (+4 semitones)** on top of the original note. Because this new raw pitch is immediately forced through the quantization matrix, the 3rd will automatically flatten into a Minor 3rd when musically appropriate for the key. 
+*   **Pentatonic & Blues Scales**: In these sparser scales, a 3rd is less desirable as it often clashes or resolves poorly. When the scale knob is set to Pentatonic or Blues (Scale type $\ge$ 3), the pedal switches to adding a **Perfect 5th (+7 semitones)** to create powerful, open sounding harmonies heavily used in rock.

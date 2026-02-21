@@ -6,7 +6,27 @@
 #include "Synthesis/oscillator.h"
 
 using namespace daisy;
+/**
+ * // Inside libDaisy/src/daisy_seed.h
+ * namespace daisy
+ * {
+ *     class DaisySeed
+ *     {
+ *         // ... all the methods and variables for the board ...
+ *     };
+ * }
+ */
 using namespace daisysp;
+/**
+ * // Inside DaisySP/Source/Filters/svf.h
+ * namespace daisysp
+ * {
+ *     class Svf
+ *     {
+ *         // ... DSP filtering code ...
+ *     };
+ * }
+ */
 
 /**
  * @brief Converts a frequency in Hertz to its corresponding fractional MIDI note number.

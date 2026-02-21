@@ -19,6 +19,11 @@ Comprehensive documentation on building, wiring, and understanding the DSP algor
 * [**Hardware Setup & Wiring Table**](docs/hardware_setup.md): Complete pinout guide, breadboard wiring, and AC-coupling instructions for hooking up the Daisy Seed.
 * [**Noise Mitigation & DSP Algorithms**](docs/noise_mitigation.md): An in-depth look into the custom DSP fixes, including the DC blockers, SVF envelope trackers, and FPU denormal logic.
 
+## Source Code
+
+The primary DSP engine and audio routing logic for the Ethereal Harmonizer is located entirely within a single source file:
+* [**`src/harmonizer.cpp`**](src/harmonizer.cpp)
+
 ## Harmony Generation Logic
 
 When the pedal detects a solid pitch and opens the noise gate, it simultaneously synthesizes a secondary harmony note to accompany the fundamental guitar tone. This harmony is not fixed; it intelligently adapts based on the user-selected musical **Scale**.

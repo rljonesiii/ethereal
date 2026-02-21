@@ -4,20 +4,33 @@
             "name": "Mac",
             "includePath": [
                 "${workspaceFolder}/**",
+                "${workspaceFolder}/../DaisyExamples/libDaisy",
                 "${workspaceFolder}/../DaisyExamples/libDaisy/src/**",
-                "${workspaceFolder}/../DaisyExamples/DaisySP/Source/**",
+                "${workspaceFolder}/../DaisyExamples/libDaisy/core",
                 "${workspaceFolder}/../DaisyExamples/libDaisy/Drivers/CMSIS/Include",
+                "${workspaceFolder}/../DaisyExamples/libDaisy/Drivers/CMSIS/DSP/Include",
                 "${workspaceFolder}/../DaisyExamples/libDaisy/Drivers/CMSIS/Device/ST/STM32H7xx/Include",
-                "${workspaceFolder}/../DaisyExamples/libDaisy/Drivers/STM32H7xx_HAL_Driver/Inc"
+                "${workspaceFolder}/../DaisyExamples/libDaisy/Drivers/STM32H7xx_HAL_Driver/Inc",
+                "${workspaceFolder}/../DaisyExamples/libDaisy/Middlewares/ST/STM32_USB_Device_Library/Core/Inc",
+                "${workspaceFolder}/../DaisyExamples/libDaisy/Middlewares/ST/STM32_USB_Host_Library/Core/Inc",
+                "${workspaceFolder}/../DaisyExamples/libDaisy/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Inc",
+                "${workspaceFolder}/../DaisyExamples/libDaisy/Middlewares/Third_Party/FatFs/src",
+                "${workspaceFolder}/../DaisyExamples/DaisySP/Source/**",
+                "${workspaceFolder}/../DaisyExamples/DaisySP/DaisySP-LGPL/Source/**"
             ],
             "defines": [
                 "STM32H750xx",
-                "USE_HAL_DRIVER"
+                "STM32H750IB",
+                "CORE_CM7",
+                "ARM_MATH_CM7",
+                "HSE_VALUE=16000000",
+                "USE_HAL_DRIVER",
+                "USE_FULL_LL_DRIVER"
             ],
             "macFrameworkPath": [],
             "compilerPath": "/usr/local/bin/arm-none-eabi-gcc",
-            "cStandard": "c17",
-            "cppStandard": "c++17",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14",
             "intelliSenseMode": "gcc-arm"
         }
     ],

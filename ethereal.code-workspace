@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "ethereal",
+			"path": "../Desktop/Work/_Bloodhoney/Projects/ethereal"
+		},
+		{
+			"name": "DaisyExamples",
+			"path": "../Desktop/Work/_Bloodhoney/Projects/DaisyExamples"
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			"seed/Blink"
+		]
+	}
+}

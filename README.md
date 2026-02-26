@@ -46,4 +46,24 @@ make program-dfu
 ```
 
 ## License
-MIT
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Author
+
+* **Robert Jones** - [rljonesiii](https://github.com/rljonesiii)
+
+## Citation
+
+If you use this library in your research, please cite:
+
+```bibtex
+@misc{jones2026ethereal,
+  author = {Jones, Robert},
+  title = {Ethereal: A high-fidelity, zero-latency, multi-scale guitar pitch tracker and interval harmonizer},
+  year = {2026},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/rljonesiii/ethereal}}
+}
+```

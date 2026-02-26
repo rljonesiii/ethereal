@@ -335,6 +335,12 @@ static void AudioCallback(daisy::AudioHandle::InputBuffer in, daisy::AudioHandle
 int main(void) {
     // Hardware Initialization
     hw.Init();
+
+    // Initialize the USB port as a Virtual COM Port (CDC).
+    // This allows the build script to auto-reboot the Daisy into DFU mode
+    // using the 1200-baud touch, saving us from pressing BOOT + RESET manually.
+    // hw.usb_handle.Init(UsbHandle::FS_INTERNAL);
+
     float sr = hw.AudioSampleRate();
 
     // ADC Initialization
